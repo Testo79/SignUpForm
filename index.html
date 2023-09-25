@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <link href="css/form.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/intlTelInput.css">
+    <link rel="stylesheet" href="css/checkbox-svg.css">
+</head>
+<body>
+    <div id="app">
+        <div class="wrapper">
+            <section class="main-intro" id="register">
+                <div class="form-side">
+                    <div class="fs-header">
+                        REGISTER YOUR FREE ACCOUNT TODAY
+                    </div>
+                    <div class="fs-body">
+                        <form method="POST" action="#" class="main-form" id="registration-form">
+                            <div class="preloader"></div>
+                            <div class="form-wrapper user-inputs mt-xl-0">
+                                <div class="col-12 col-sm-12 form-group">
+                                    <div class="valid-err">
+                                        <div class="field-group mt-4">
+
+                                            <div class="form-group">
+                                                
+                                                <input id="field_first_name" class="form-control" type="text" name="first_name"
+                                                    placeholder="Vorname" value="" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <input id="field_last_name" class="form-control" type="text" name="last_name"
+                                                    placeholder="Nachname" value="" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <input id="email" class="form-control" type="email" name="email"
+                                                    placeholder="E-Mail" value="" required>
+                                            </div>
+
+                                            <div class="form-group form-group--pass">
+                                                <div class="form-password_group"
+                                                    style="width: 60%;display: inline-block;">
+                                                    <input id="password"
+                                                        class="password show_placeholder valid form-control" type="text"
+                                                        name="password" autocomplete="off" placeholder="Passwort"
+                                                        required rel="gp" data-size="5"
+                                                        data-character-set="0-9,a-z,A-Z">
+                                                </div>
+                                                <button class="generate-password-button getNewPass" type="button"
+                                                    onclick="exitpage=false;">
+                                                    Passwort
+                                                    </br> generieren
+                                                </button>
+                                                <div class="valid-pass-label" style="display: none;">
+                                                    <div class="valid-check valid-check-a-z">
+                                                        <label for="password">
+                                                            Es muss mindestens einen Buchstaben enthalten
+                                                        </label>
+                                                    </div>
+                                                    <div class="valid-check valid-check-A-Z">
+                                                        <label for="password">
+                                                            Es muss mindestens einen Großbuchstaben enthalten
+                                                        </label>
+                                                    </div>
+                                                    <div class="valid-check valid-check-1-9">
+                                                        <label for="password">
+                                                            Muss mindestens eine Ziffer enthalten
+                                                        </label>
+                                                    </div>
+                                                    <div class="valid-check valid-check-length">
+                                                        <label for="password">
+                                                            Es muss 8 bis 12 Zeichen lang sein
+                                                        </label>
+                                                    </div>
+                                                    <div class="valid-check valid-check-alphanumeric">
+                                                        <label for="password">
+                                                            Es darf keine Sonderzeichen enthalten
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <input id="field-phone" class="form-control phone" type="tel" name="phone" placeholder=""
+                                                    value="" required>
+                                            </div>
+                                            <div class="error-msg"></div>
+                                            <br>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 pt-0 form-group px-4">
+                                    <button type="submit" id="submit_button" class="btn btn-success">
+                                        ACCOUNT REGISTRIEREN
+                                    </button>
+                                </div>
+                                <div class="col-12">
+                                    <div class="checkbox-svg">
+                                        <input type="checkbox" id="cbx-2-pop" style="display: none;">
+                                        <label for="cbx-2-pop" class="checked-svg">
+                                            <svg width="20px" height="20px" viewBox="0 0 18 18">
+                                                <path
+                                                    d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z">
+                                                </path>
+                                                <polyline points="1 9 7 14 15 4"></polyline>
+                                            </svg>
+                                        </label>
+                                        <div class="privacy-checkbox">
+                                            <p>
+                                                Mit der Registrierung akzeptiere ich die
+                                                <a href="#" target="_blank"> Nutzungsbedingungen </a> und
+                                                <a href="#" target="_blank"> Datenschutzerklärung </a> der Website.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="fs-footer">
+                        <div class="fs-top">Um in Amazon zu investieren, müssen Sie mindestens 18 Jahre alt sein. Das
+                            erforderliche Mindestkapital beträgt 250 €.</div>
+
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="js/intlTelInput.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/valid.js"></script>
+    <script src="js/device.min.js"></script>
+    <script src="js/default.js"></script>
+    <script src="https://kit.fontawesome.com/9742a8de40.js" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+
+
+</html>
